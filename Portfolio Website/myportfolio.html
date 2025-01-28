@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex James Arwonga Web Dev</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <style>
+body {
+    background-color:darkgray;
+}
+.navbar {
+    padding: 10px 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Keep it on top of other elements */
+    margin-top: 3%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.0em;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button1 {
+    background-color: red;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.dev {
+    text-align: center;
+    margin-top: 15em;
+}
+.oper {
+    color: darkred;
+    font-family: "Brush Script MT", ;
+}
+.oper1 {
+    color: darkred;
+    font-size: 1.5em;
+}
+
+.dev1 {
+    color: purple;
+    font-family:"Brush Script MT", cursive;
+}
+.center-container {
+    color: #fff;
+    text-align: center;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    display: flex;
+    gap: 1.3em;
+    margin-left: 25%;
+    font-size: 1.3em;
+    margin-top: 3em;
+    height: 190px;
+}
+.center-container p {
+    font-size: 1.3em;
+    margin-top: 1em;
+}
+.center-container img {
+    margin-right: 2.2em;
+    width: auto;
+    height: fit-content;
+}
+.cta-button {
+    padding: 10px 20px;
+    background-color: darkred;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.cta-button:hover {
+    background-color: purple;
+}
+.img {
+    text-align: right;
+    margin-top: o.5em;
+}
+.part2 {
+    background-color: whitesmoke;
+    margin-bottom: 3em;
+}
+.part2 h1 {
+    color: black;
+    text-align: center;
+}
+.part2 p {
+    text-align: center;
+    font-size: 1.2em;
+}
+.part3 h1 {
+    text-align: center;
+    color: black;
+}
+.part3 {
+    background-color: whitesmoke;
+    margin-bottom: 3em;
+}
+.container {
+    display: flex;            /* Enables flexbox layout */
+    justify-content: space-evenly; /* Distributes space evenly between items */
+    align-items: center;      /* Centers images vertically if needed */
+    gap: 30px;                /* Sets a fixed space between images */
+    height: auto;
+    margin-bottom:3em ;
+    margin-top: 1em;
+}
+.project-container {
+    text-align: center;         /* Center-align the text below each image */
+    width: 500px;               /* Set width for each image-item block */
+}
+.project-container p {
+    font-size: 1.1em;
+}
+.projectred {
+    color: darkred;
+    font-size: 1.2em;
+}
+.tech {
+    text-align: center;
+    font-size: 1.3em;
+    letter-spacing: 2.5px;
+    color: darkred;
+}
+.part4 h1 {
+    text-align: center;
+}
+.part4 p {
+    text-align: center;
+    font-size: 1.1em;
+    color: whitesmoke;
+}
+.part4 {
+    background-color: whitesmoke;
+    margin-bottom: 3em;
+    background-image: url(image/d4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.part5 {
+    background-color: whitesmoke;
+    margin-bottom: 3em;
+}
+.part5 p {
+    font-size: 1.2em;
+    text-align: center;
+}
+.part5 h1 {
+    text-align: center;
+}
+.part5 h2 {
+    text-align: center;
+    font-size: 1.12em;
+    color: darkred;
+    letter-spacing: 8px;
+}
+.part6 h2 {
+    text-align: center;
+    font-size: 1.3em;
+    color: darkred;
+    letter-spacing: 8px;
+}
+.part6 h1 {
+    text-align: center;
+}
+.part6 p {
+    text-align: center;
+    font-size: 1.1em;
+}
+.part6 {
+    background-color: whitesmoke;
+    margin-bottom: 3em;
+}
+.part6 a {
+color: black;
+text-decoration: none;
+letter-spacing: 3px;
+}
+.part6 a:hover {
+    color: darkblue;
+}
+footer {
+    display: grid;                                /* Use Grid layout */
+    grid-template-columns: repeat(4, 1fr);       /* 4 equal-width columns */
+    gap: 20px;                                    /* Space between columns */
+    padding: 20px;                                /* Padding around the footer */
+    background-color: #333;                       /* Background color of the footer */
+    color: white;                                 /* Text color */
+    font-size: 1.1em;
+    text-align: center;
+}
+.footer-section {
+    flex: 1;                              /* Make each section take equal space */
+    min-width: 200px;                     /* Ensure each section has a minimum width */
+    padding: 10px;                        /* Padding inside each section */
+}
+.footer-section p {
+    font-size: 16px;                      /* Paragraph text size */
+    line-height: 1.6;                     /* Line height for better readability */
+    color: #ffffff; 
+    text-align: left; 
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 50px;                 
+}
+footer img {
+    width: 20px;
+    height: 20px;
+    align-items: center;
+}
+.contactme h1 {
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 10px;
+    color: darkred;
+}
+.developer img {
+    border-radius: 0%;
+    width: 350PX;
+    height: 106PX;
+    align-items: left;
+}
+.footer-section a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+.footer-section a:hover {
+    color: darkreds;
+}
+.image1 {
+    height: 100%;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home"><button class="cta-button1">Home</button></a></li>
+            <li><a href="#about"><button class="cta-button1">About</button></a></li>
+            <li><a href="#projects"><button class="cta-button1">Portfolio/Projects</button></a></li>
+            <li><a href="#contact"><button class="cta-button1">Contact</button></a></li>
+            <li><a href="#blog"><button class="cta-button1">Blog</button></a></li>
+        </ul>
+    </nav>
+    <div class="dev">
+        <div class="center-container">
+            <p><span class="oper1">“</span>Hello my name is Alex
+                a passionate designer and developer who loves crafting visually appealing and functional digital experiences. Whether its designing sleek interfaces or coding dynamic web applications, I thrive at the intersection of creativity and technology. Take a look around and explore my work<span class="oper1">!”</span>
+            </p>
+            <img src="image/passport1.jpg" alt="">
+        </div>
+    <h1><span class="oper">Crafting Beautiful & Functional Web Experiences.</span></h1>
+    <a href="#contactme"><button class="cta-button">Let’s Connect</button></a>
+    </div>
+    <div class="part2">
+        <h1>About Me (Who I Am?)</h1>
+        <p><span class="oper1">“</span>Hey, I’m Alex, a passionate web developer who loves turning ideas into interactive digital experiences.</p>
+        <p>I specialize in crafting beautiful and functional web experiences using React, Next.js, and modern design principles.</p>
+        <p>My journey into tech started with a love for creativity and problem-solving, which led me to pursue web development.</p>
+        <p>I’m always looking for new challenges to push my creativity and technical skills further.</p>
+        <p>When I’m not coding, you can find me sketching ideas or exploring new coffee spots.<span class="oper1">”</span></p>
+    </div>
+    <div class="part3">
+        <h1>Projects / My Work</h1>
+        <div class="container">
+            <div class="project-container">
+                <p><span class="projectred"> Project 1:</span></p>
+                <p>Title: E-commerce Store Redesign</p>
+                <p>Tech Stack: React, Tailwind CSS, Node.js</p>
+                <p>Description: Designed and developed a responsive e-commerce platform that increased conversions by 30%.</p>
+                <p><a href="" >[View Project]</a> </p>
+            </div>
+            <div class="project-container">
+                <p><span class="projectred"> Project 2:</span></p>
+                <p>Title: Portfolio Website</p>
+                <p>Tech Stack: Next.js, Framer Motion, SCSS</p>
+                <p>Description: A personal website showcasing my skills, projects, and blog insights.</p>
+                <p><a href="">[View Project]</a></p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="project-container">
+                <p><span class="projectred"> Project 3:</span></p>
+                <p>Title: Portfolio Website</p>
+                <p>Tech Stack: Next.js, Framer Motion, SCSS</p>
+                <p>Description: A personal website showcasing my skills, projects, and blog insights.</p>
+                <p><a href="">[View Project]</a></p>
+            </div>
+            <div class="project-container">
+                <p><span class="projectred"> Project 4:</span></p>
+                <p>Title: Portfolio Website</p>
+                <p>Tech Stack: Next.js, Framer Motion, SCSS</p>
+                <p>Description: A personal website showcasing my skills, projects, and blog insights.</p>
+                <p><a href="">[View Project]</a></p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="project-container">
+                <p><span class="projectred"> Project 5:</span></p>
+                <p>Title: Portfolio Website</p>
+                <p>Tech Stack: Next.js, Framer Motion, SCSS</p>
+                <p>Description: A personal website showcasing my skills, projects, and blog insights.</p>
+                <p><a href="">[View Project]</a></p>
+            </div>
+            <div class="project-container">
+                <p><span class="projectred"> Project 1:</span></p>
+                <p>Title: Portfolio Website</p>
+                <p>Tech Stack: Next.js, Framer Motion, SCSS</p>
+                <p>Description: A personal website showcasing my skills, projects, and blog insights.</p>
+                <p><a href="">[View Project]</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="part4">
+            <h1> Skills & Tools</h1>
+            <p><span class="tech">“Technologies I work with to bring ideas to life.”</span></p>
+            <p>Front-End:
+                HTML, CSS, JavaScript, React, Next.js, TailwindCSS
+            </p>
+            <p>Back-End:
+                Node.js, Express, MongoDB, Firebase
+            </p>
+            <p>Design Tools:
+                Figma, Adobe XD, Sketch
+            </p>
+            <p>Other Skills:
+                Version Control (Git), API Integration, Responsive Design
+            </p>
+    </div>
+    <div class="part5">
+        <h1>Experience</h1>
+        <h2>[Job Title] – [Company Name]</h2>
+        <p>(2023 - Present)</p>
+        <p>Developed and maintained scalable web applications.</p>
+        <p>Collaborated with designers and product teams to create engaging user experiences.</p>
+        <p>Optimized website performance, improving load time by 40%.</p>
+        <h2>Freelance Developer</h2>
+        <p>(2021 - 2023)</p>
+        <p>Worked with clients to develop custom web solutions tailored to their business needs.</p>
+        <p>Specialized in e-commerce and portfolio websites.</p>
+        <p><a href=""><button class="cta-button">Download Resume</button></a></p>
+    </div>
+    <div class="part6">
+        <h1>Blog (Insights & Ideas)</h1>
+        <p>Sharing my thoughts, experiences, and tips.</p>
+        <h2>Recent Posts:</h2>
+        <a href=""><p>The Future of Web Development in 2025 >></p></a>
+        <a href=""><p>5 Ways to Improve Your Website's Performance >></p></a>
+        <a href=""><p>Why Design Thinking Matters in Web Development >></p></a>
+        
+    </div>
+    <div class="contactme"><h1>Contact Me</h1></div>
+    <footer>
+        <div class="footer-section">
+            
+            <p>
+                <img src="image/icons/whatsapp.png" alt="Phone Icon" class="phone-icon">
+                Phone: +254708038090 & +254110565273
+            </p>
+            <p>
+                <img src="image/icons/gmail.png" alt="Phone Icon" class="gmail-icon">
+                Email: <a href=""> khushimotors@yahoo.com</a>
+            </p>
+            <p>
+                <img src="image/icons/facebook.png" alt="Phone Icon" class="facebook-icon">
+                <a href=""> facebook@khushimotors.com</a>
+            </p>
+            <p>
+                <img src="image/icons/instagram.png" alt="Phone Icon" class="instargram-icon">
+                <a href=""> instagram@khushimotors.com</a>
+            </p>
+            <p>
+                <img src="image/icons/twitter.png" alt="Phone Icon" class="twiter-icon">
+                <a href=""> x@khushimotorsbravo.com </a>
+            </p>
+        </div>
+        <div class="footer-section">
+            <p>
+                <img src="image/icons/privacy.png" alt="Phone Icon" class="privacy-icon">
+                <a href="">Privacy Policy</a>
+            </p>
+            <p>
+                <img src="image/icons/compliant.png" alt="Phone Icon" class="legal-icon">
+                <a href="">Legal Policy</a>
+            </p>
+        </div>
+        <div class="footer-section">
+            <p>Developed By Arwonga Founder CODEXPLORER</p>
+            <div class="developer">
+                <img src="image/icons/CODEXPLORER (2).png" alt="developer">
+            </div>
+        </div>
+    </footer>
+</body>
